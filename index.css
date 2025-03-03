@@ -1,0 +1,134 @@
+* {
+    margin: 0;
+    padding: 0;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    box-sizing: border-box;
+}
+
+body {
+    background-image: url(image/body.jpg);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.container {
+    width: 90%;
+    max-width: 500px;
+    background: rgba(0, 0, 0, 0.7);
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+    text-align: center;
+}
+
+h1 {
+    padding: 10px;
+    color: #3bf411;
+    font-size: 24px;
+    text-align: center;
+}
+
+textarea {
+    width: 100%;
+    height: 200px;
+    padding: 10px;
+    font-size: 18px;
+    background: #08083c;
+    color: #98b092;
+    border: none;
+    border-radius: 5px;
+    resize: none;
+    outline: none;
+}
+
+.row {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 15px;
+    flex-wrap: wrap;
+}
+
+select {
+    width: 60%;
+    padding: 10px;
+    background: #cbdaf7;
+    border: none;
+    border-radius: 5px;
+    outline: none;
+    font-size: 16px;
+}
+
+button {
+    height: 50px;
+    width: 35%;
+    background: #3bf411;
+    border: none;
+    border-radius: 5px;
+    font-size: 16px;
+    color: black;
+    cursor: pointer;
+    transition: background 0.3s;
+}
+
+button:hover {
+    background: #32d10e;
+}
+
+img {
+    width: 40px;
+    height: 40px;
+    cursor: pointer;
+    margin-left: 10px;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .container {
+        width: 95%;
+    }
+
+    h1 {
+        font-size: 20px;
+    }
+
+    textarea {
+        font-size: 16px;
+        height: 180px;
+    }
+
+    .row {
+        flex-direction: column;
+        gap: 10px;
+    }
+
+    select, button {
+        width: 100%;
+    }
+
+    img {
+        width: 35px;
+        height: 35px;
+    }
+}
+
+@media (max-width: 480px) {
+    h1 {
+        font-size: 18px;
+    }
+
+    textarea {
+        font-size: 14px;
+        height: 160px;
+    }
+
+    img {
+        width: 30px;
+        height: 30px;
+    }
+}
